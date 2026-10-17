@@ -882,3 +882,178 @@ h2 em { color: var(--sage); font-style: italic; }
     transform: none;
   }
 }
+/* ===== SOBRE A REGINA ===== */
+.about-regina {
+  width: 100%;
+  background: var(--cream);
+  padding: clamp(80px, 9vw, 130px) 0;
+  overflow: hidden;
+  border-top: 1px solid rgba(78,78,78,.08);
+}
+
+.about-regina-inner {
+  width: min(1240px, calc(100% - 10vw));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: start;
+}
+
+.about-regina-media {
+  position: sticky;
+  top: 110px;
+}
+
+.about-regina-photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #EDEDEB;
+  border-radius: 4px;
+}
+
+.about-regina-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  transition: transform .6s cubic-bezier(.2,.7,.2,1);
+}
+
+.about-regina-photo:hover img {
+  transform: scale(1.03);
+}
+
+.about-regina-badge {
+  position: absolute;
+  bottom: -22px;
+  right: -18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #191E17;
+  color: #fff;
+  padding: 14px 18px;
+  box-shadow: 0 12px 30px rgba(0,0,0,.18);
+}
+
+.about-regina-badge span {
+  font-family: var(--sans);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: .9;
+  color: var(--sand);
+}
+
+.about-regina-badge p {
+  margin: 0;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.about-regina-content h2 {
+  margin: 0 0 28px;
+  font-family: var(--serif);
+  font-size: clamp(34px, 4.2vw, 56px);
+  line-height: .98;
+  letter-spacing: -.04em;
+  color: var(--ink);
+}
+
+.about-regina-content h2 em {
+  color: var(--sage);
+  font-style: italic;
+}
+
+.about-regina-text {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.about-regina-text p {
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.7;
+  color: #4e4e4e;
+}
+
+.about-regina-purpose {
+  position: relative;
+  margin: 0 0 32px;
+  padding: 22px 26px 22px 32px;
+  background: #fff;
+  border-left: 3px solid var(--sage);
+}
+
+.about-regina-purpose p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.6vw, 21px);
+  line-height: 1.4;
+  color: var(--sage-dark);
+}
+
+.about-quote {
+  position: absolute;
+  top: -18px;
+  left: 12px;
+  font-family: var(--serif);
+  font-size: 48px;
+  line-height: 1;
+  color: var(--sand);
+}
+
+.about-regina-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 34px;
+  display: grid;
+  gap: 14px;
+}
+
+.about-regina-list li {
+  position: relative;
+  padding-left: 22px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #3a3a3a;
+}
+
+.about-regina-list li::before {
+  content: "✳";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  font-size: 10px;
+  color: var(--sage);
+}
+
+.about-regina-list b {
+  color: var(--ink);
+}
+
+@media (max-width: 900px) {
+  .about-regina-inner {
+    grid-template-columns: 1fr;
+  }
+  .about-regina-media {
+    position: relative;
+    top: 0;
+    max-width: 480px;
+  }
+  .about-regina-badge {
+    right: 12px;
+    bottom: -16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-regina-content h2 {
+    font-size: clamp(32px, 9vw, 42px);
+  }
+}
