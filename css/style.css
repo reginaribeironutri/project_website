@@ -334,7 +334,7 @@ h2 em { color: var(--sage); font-style: italic; }
 
 .women-image {
   min-height: 560px;
-  background: url('../assets/img/regina_m3.jpg') 55% center/cover;
+  background: url('../assets/img/regina_m3.png') 55% center/cover;
 }
 
 .women-content {
@@ -436,9 +436,9 @@ h2 em { color: var(--sage); font-style: italic; }
 
 .article:hover .article-art { transform: scale(.98); }
 
-.art-a { background-image: url('../assets/img/regina_m4.jpg'); }
-.art-b { background-image: url('../assets/img/regina_m7.jpg'); }
-.art-c { background-image: url('../assets/img/regina_m5.jpg'); }
+.art-a { background-image: url('../assets/img/regina_m4.webp'); }
+.art-b { background-image: url('../assets/img/regina_m7.webp'); }
+.art-c { background-image: url('../assets/img/regina_m5.webp'); }
 
 .article h3 {
   margin: 18px 0 0;
