@@ -432,6 +432,7 @@ h2 em { color: var(--sage); font-style: italic; }
   overflow: hidden;
   background: center/cover;
   transition: transform .5s;
+  text-transform: capitalize;
 }
 
 .article:hover .article-art { transform: scale(.98); }
